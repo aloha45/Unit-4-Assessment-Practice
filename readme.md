@@ -79,7 +79,7 @@
 
 18. Add UI to the create path in the html:
 
-    `<a href="{ url 'create_todo' %}">Create Todo</a>`
+    `<a href="{% url 'create_todo' %}">Create Todo</a>`
 
 19. Touch main_app/template/todo_form.html, and add a form:
 
@@ -143,7 +143,7 @@
     `</li>`
     `<a href="{% url 'delete_todo' todo.id %}">`
 
-26. Touch `main_app/templates/main_app/todo_confirm.html`, add boilerplate, and the following code:
+26. Touch `main_app/templates/main_app/todo_confirm_delete.html`, add boilerplate, and the following code:
 
     `<h4>Are you sure you want to delete <span class="teal-text">{{ object.name }}</span>?</h4>`
   `<form action="" method="POST">`
